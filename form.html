@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile Phone Usage Survey</title>
+</head>
+<body>
+
+    <h1>Mobile Phone Usage Survey</h1>
+
+    <form action="submit.php" method="post">
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" placeholder="username@mailserver" required><br><br>
+
+        <label for="device">Which mobile device do you use?</label><br>
+        <select id="device" name="device" required>
+            <optgroup label="iPhone">
+                <option value="16p">iPhone 16 Pro</option>
+                <option value="15">iPhone 15</option>
+            </optgroup>
+            <optgroup label="iPad">
+                <option value="air">iPad Air</option>
+                <option value="pro">iPad Pro</option>
+            </optgroup>
+        </select><br><br>
+
+        <label for="problem">What is the most common issue you face while using your mobile phone?</label><br>
+        <textarea id="problem" name="problem" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="Providerselect">Which mobile network providers have you used?</label><br>
+        <select id="Providerselect" name="Provider" required>
+            <option value="Chunghwa Telecom">Chunghwa Telecom</option>
+            <option value="Taiwan Mobile">Taiwan Mobile</option>
+            <option value="FarEasTone">FarEasTone</option>
+            <option value="Taiwan Star">Taiwan Star</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form><br>
+
+    <footer><strong>Thanks For Your Participation</strong></footer>
+
+</body>
+</html>
